@@ -1,53 +1,31 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Inter", "Outfit", "SF Pro", system-ui, sans-serif;
-  --color-primary: #6366f1;
-  --color-accent: #a855f7;
+  --font-display: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "DM Sans", system-ui, sans-serif;
+  --color-accent: #C8A96E;
 }
 
 :root {
-  --background: #fdfdfe;
-  --foreground: #09090b;
-  --card: #ffffff;
-  --card-border: #e2e8f0;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #020617;
-    --foreground: #f8fafc;
-    --card: #1e293b;
-    --card-border: #334155;
-  }
+  --bg: #0F0E0C;
+  --bg-card: #181714;
+  --bg-input: #1D1B17;
+  --bg-hover: #1F1E19;
+  --border: #2C2A24;
+  --border-hover: #48463A;
+  --text: #EDE8DF;
+  --text-muted: #7C7768;
+  --text-faint: #3E3C35;
+  --accent: #C8A96E;
+  --accent-hover: #D9BB82;
+  --accent-fg: #0F0E0C;
+  --destructive: #B05050;
 }
 
 body {
-  background-color: var(--background);
-  color: var(--foreground);
+  background-color: var(--bg);
+  color: var(--text);
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
-}
-
-.glass-card {
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 1rem;
-}
-
-.dark .glass-card {
-  background: rgba(0, 0, 0, 0.2);
-  border: 1px solid rgba(255, 255, 255, 0.05);
-}
-
-.hero-glow {
-  position: absolute;
-  width: 300px;
-  height: 300px;
-  background: radial-gradient(circle, var(--color-primary), transparent 70%);
-  filter: blur(60px);
-  opacity: 0.15;
-  z-index: -1;
+  -moz-osx-font-smoothing: grayscale;
 }
